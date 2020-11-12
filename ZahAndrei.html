@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("nume").innerHTML = "Inginer Zah Andrei";
+  document.getElementById("nume").style.color = "blue";
+  document.getElementById("linia1").style.color = "green";
+  document.getElementById("linia2").style.color = "green";
+  document.getElementById("linia3").style.color = "green";  
+  document.getElementById("linia1").style.font = "Times New Roman";
+  document.getElementById("linia2").style.font = "Times New Roman";
+  document.getElementById("linia3").style.font = "Times New Roman";
+  document.getElementById("da").style.backgroundColor = "pink";
+  document.getElementById("da1").style.backgroundColor = "pink";
+  document.getElementById("linia1").style.backgroundColor = "pink";
+  document.getElementById("linia2").style.backgroundColor = "pink";
+  document.getElementById("linia3").style.backgroundColor = "pink";
+  document.getElementById("da5").style.backgroundColor = "pink";
+  document.getElementById("da6").style.backgroundColor = "pink";
+  document.getElementById("da7").style.backgroundColor = "pink";
+  document.getElementById("da8").style.backgroundColor = "pink";
+  document.getElementById("da9").style.backgroundColor = "pink";
+  document.getElementById("h5").style.backgroundColor = "darkgreen";
+  document.body.style.backgroundColor = "red";
+  document.getElementById("imagine").src = "unnamed.jpg";  
+  document.getElementById("imagine").style.opacity = "0.9";
+  document.getElementById("linia1").innerHTML = "Sa fac un internship";
+  document.getElementById("linia2").innerHTML = "Work and travel";
+  document.getElementById("linia3").innerHTML = "Sa imi largesc orizonturile in materie de programare";
+}
+
+function arataVarsta()
+{
+var azi= new Date;
+var varstaMea;
+var anNasc= document.getElementById("varsta").innerHTML;
+var anCurent= azi.getFullYear();
+
+varstaMea=anCurent-parseInt(anNasc);
+document.getElementById("varsta").innerHTML= varstaMea;
+}
+
+</script>
+<title>Pagina de prezentare</title>
+<style>
+body{
+background-color: lightgreen;
+}
+p{
+color: yellow;
+font-family: Arial;
+}
+img{
+border-radius: 25px;
+padding: 20px;
+width: 200px;
+height: 300px;
+opacity: 0.6;
+}
+h1{
+color: red;
+font-family: Arial;
+}
+li{
+color: blue;
+}
+h5{
+color: orange;
+font-family: Arial;
+}
+table, th, td{
+background-color: darkgreen;
+border: 1px solid black;
+}
+ol{
+background-color: darkgreen;
+border-style: double;
+}
+</style>
+</head>
+<body id="bakgorund">
+
+<h1 id="nume">Zah Andrei Ionut</h1>
+<p>Email: zahandrei@ymail.com</p>
+<img id="imagine" src="123189011_788137825068289_4146268878773467038_n.jpg" alt="Zah Andrei" >
+<button type="button" onclick="myFunction()">Alta Viata</button>
+<table id="da" style="width:30%">
+  <tr >
+    <th id="da1"`>Materia</th>
+  </tr>
+  <tr >
+    <td id="linia1">Programarea calculatoarelor</td>
+</td>
+  </tr>
+  <tr >
+    <td id="linia2">Informatica aplicata</td>
+  </tr>
+  <tr >
+    <td id="linia3">Ecuatii diferentiale</td>
+  </tr>
+</table>
+<p onmouseover = "arataVarsta()" id="varsta">2002</p>
+<h5 id="h5" >Hobby-uri:</h5>
+<ol id="da5">
+  <li id="da6">Handball</li>
+  <li id="da7">Jocuri video</li>
+  <li id="da8">Fotbal</li>
+  <li id="da9">Programarea</li>
+</ol>
+<p><a href="Cuprins.html">Inapoi</a></p>
+</body>
+</html>
